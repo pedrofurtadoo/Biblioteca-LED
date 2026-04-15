@@ -1,0 +1,15 @@
+/*Esse é um exemplo de como usar a função "ligar", o programa liga o led com a função "ligar" e salva as alterações com a função "update".  */
+
+#include <Arduino.h>
+#include <LED.h>
+
+Led led1(40);
+
+void setup() 
+{
+ led1.ligar(); 
+}
+void loop() 
+{
+  led1.update();
+}

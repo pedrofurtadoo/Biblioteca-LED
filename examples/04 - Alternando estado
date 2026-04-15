@@ -1,0 +1,21 @@
+/*Esse é um exemplo de como usar a função "alternar", o programa liga o led, recebe uma condição do temporizador externo: millis e após 5 segundos ele alterna o estado do led.
+E salva as alterações com a função "update". */
+
+#include <Arduino.h>
+#include <LED.h>
+
+Led led1(40);
+
+void setup()
+{
+
+    
+}
+void loop()
+{
+    led1.ligar();
+  if (millis() > 5000)
+{
+    led1.alternar();
+}
+    led1.update();

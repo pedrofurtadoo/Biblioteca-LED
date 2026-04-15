@@ -1,0 +1,23 @@
+/*Esse é um exemplo de como usar a função "setEstado", o programa liga o led por 5s através do temporizador externo "millis" e altera o estado do led de "HIGH" para "LOW" com a função "getEstado".
+A função "update" é usada para salvar as alterações. */
+
+#include <Arduino.h>
+#include <LED.h>
+
+Led led1(40);
+
+void setup()
+{
+ 
+}
+void loop()
+{
+  led1.ligar();
+  if(millis() > 5000)
+  {
+    led1.setEstado(0);
+  }
+
+  led1.update();
+
+}

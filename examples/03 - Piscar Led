@@ -1,0 +1,15 @@
+/*Esse é um exemplo de como usar a função "piscar" , o programa faz com que o led pisque com a função "piscar" e salva as alterações com a função "update". */
+
+#include <Arduino.h>
+#include <LED.h>
+
+Led led1(40);
+
+void setup() 
+{
+ led1.piscar(2,15);
+}
+void loop() 
+{
+  led1.update();
+}
